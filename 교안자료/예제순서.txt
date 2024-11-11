@@ -1,0 +1,65 @@
+step01-cra
+  실행, 배포, 폴더 구조
+
+step02-vite
+  실행, 배포,폴더구조
+===============================
+step03-jsx
+ App.jsx 파일에 - jsx문법 test
+===============================
+step04-component
+1)
+  Ex01_Export.jsx
+  Ex01_Sub.jsx
+  Ex01_Sub02.jsx
+
+
+2)
+  componets
+            /Ex03_Book.jsx
+  Ex03_Library.jsx
+
+   :props설명
+
+3)
+
+ componets/
+     Button.jsx
+     ButtonStyle.css
+
+ Ex02_ButtonTest.jsx
+ Ex02_ButtonTest.css
+   :이미지 저장 경로 설명 + props
+
+
+4) 실습해보기
+  src /components < Header.js  | Nav.js   |  Article.js  | Trip.js  추가
+  Ex04_TripTest.jsx
+  Ex04_TripTest.css
+
+============================================
+step05-state
+ 1) count  up, down
+   Ex01_Count.jsx
+   Ex01_Count.css
+
+
+ 2) Form01
+     Ex02_Form1.jsx
+
+3) Form02
+   Ex03_Form2.jsx
+
+4) 삼항연산자
+  Ex04_ConditionRedering.jsx
+======================================================
+step06-map
+
+
+-------------------------------------
+
+
+---------------------------------------
+
+ 
+
