@@ -54,7 +54,13 @@ step05-state
   Ex04_ConditionRedering.jsx
 ======================================================
 step06-map
+ 1) Ex01_Map.jsx -  기본 배열
+ 2) Ex02_Map.jsx - 객체 배열
+ 3) Ex03_Map.jsx - Product  컴포넌트 map사용
+ 4)CommentList.jsx  실습
 
+  5) Ex04_MapKeyTest.jsx
+  6) Ex05_MapKeyTest.jsx
 
 -------------------------------------
 

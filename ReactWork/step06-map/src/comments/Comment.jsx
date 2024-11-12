@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profile from '../src/assets/profile.png';
+import profile from '../assets/profile.png';
 
 const Comment = (props) => {
     const styles = {

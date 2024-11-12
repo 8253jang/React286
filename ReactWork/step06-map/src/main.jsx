@@ -5,7 +5,10 @@ import App from './App.jsx'
 import Ex01_Map from './Ex01_Map.jsx'
 import EX02_Map from './EX02_Map.jsx'
 import Ex03_Map from './Ex03_Map.jsx'
-import CommentList from '../comments/CommentList.jsx'
+import CommentList from './comments/CommentList.jsx'
+import Ex04_MapKeyTest01 from './EX04_MapKeyTest01.jsx'
+import Ex05_MapkeyTest02 from './Ex05_MapkeyTest02.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +22,11 @@ createRoot(document.getElementById('root')).render(
      {/* <Ex03_Map/> */}
 
     {/* 4. CommentList  test */}
-    <CommentList/>
+    {/* <CommentList/> */}
+
+     {/* 5.Ex04_MapKeyTest  */}
+     <Ex04_MapKeyTest01/>
+     <hr/>
+     <Ex05_MapkeyTest02/>
   </StrictMode>,
 )
