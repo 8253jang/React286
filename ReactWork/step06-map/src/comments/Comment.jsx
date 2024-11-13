@@ -38,8 +38,7 @@ const Comment = (props) => {
     return (
         <div style={styles.wrapper}>
             <div style={styles.imageContainer}>
-            <img src={profile} alt=""
-               style={styles.image} /> 
+            <img src={profile} alt="" style={styles.image} /> 
             </div>
             <div style={styles.contentContainer}>
                <span style={styles.nameText}>{props.name}</span> 

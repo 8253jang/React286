@@ -9,12 +9,15 @@ const Ex03_Form2 = () => {
     })
 
     const inputUpdate =(e)=>{
+        console.log(e.target)
+      //  const name=e.target.name;
+       // const value=e.target.value
        const {name, value} = e.target;
        console.log(name, value);
 
        setProfile({
         ...profile,
-        [name] : value,
+        [name] : value, // []를 사용하지 않으면 문자열 리터럴 'name'으로 취급되어 name이라는 속성이 추가된다. []사용하면 name변수의 값이 속성이름이 된다.즉 동적으로 속성이름을 결정할수 있따.
        })
     }
     return (
