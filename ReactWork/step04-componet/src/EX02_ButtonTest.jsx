@@ -12,6 +12,7 @@ const EX02_ButtonTest = () => {
         <Button text={"메일"} img={mail} imgId={2}/>
         <Button text={"위치"} img={location} imgId={1}/>
         <Button text={"검색"} img={search} imgId={3}/>
+        <Button  img={search} imgId={3}/>
      <img src="/emotion5.png"/>
     </div>
     );

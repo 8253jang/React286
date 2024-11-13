@@ -11,6 +11,7 @@ function App() {
      phone:"010-8875-8253"
    }
 
+   //css  속성 - camelcase 문법
    const cssStyle={
     color:"red" ,
     backgroundColor:"yellow"

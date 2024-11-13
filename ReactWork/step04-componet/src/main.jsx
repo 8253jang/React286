@@ -14,13 +14,13 @@ createRoot(document.getElementById('root')).render(
     {/* <Ex01_Exprot/> */}
 
      {/* 2. Book + Library */}
-      {/* <Ex03_Library /> */}
+       {/* <Ex03_Library />  */}
 
     {/* 3. Button컴포넌트 + img */}
-    {/* <EX02_ButtonTest /> */}
+    <EX02_ButtonTest />
 
     {/* 4.Trip 예제 */}
-     <Ex04_TripTest/>
+     {/* <Ex04_TripTest/> */}
    </div>
   </StrictMode>,
 )
