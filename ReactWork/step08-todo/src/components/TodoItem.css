@@ -5,20 +5,22 @@
      padding-bottom: 20px;
      border-bottom: 1px solid rgb(240, 240, 240);
 }
+
 .TodoItem input{
-     width: 20px;
-}
-.TodoItem .content{
-   flex : 1;
+    width: 20px;
 }
 
-.TodoItem .date{
+.TodoItem .content{
+    flex : 1;/*1은 부모요소에 벗어나지 않는 범위내에서 최대 크기로 나온다. */
+ }
+
+ .TodoItem .date{
     font-size: 14px;
     color: gray;
 }
 
 .TodoItem button{
-    cursor: pointer;
+   cursor: pointer;
    color:gray;
    font-size: 14px;
    border: none;
