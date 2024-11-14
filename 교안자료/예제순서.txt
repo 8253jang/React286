@@ -62,8 +62,16 @@ step06-map
   6) Ex05_MapKeyTest.jsx
 =================================
 step07-hooks
+   1) Effect01.jsx 
 
+  2) 
+    components/Timer.jsx
+    Effect02.jsx
 
+ 3) Memo.jsx
+
+ 4)
+ 
 ---------------------------------------
 
  

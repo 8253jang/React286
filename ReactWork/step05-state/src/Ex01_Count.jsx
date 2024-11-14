@@ -12,7 +12,7 @@ const Ex01_Count = () => {
 
     const plusFn = ()=>{
         setNo(no+1);
-        i--;
+        i++;
     }
 
     return (
