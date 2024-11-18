@@ -1,5 +1,6 @@
 import "./Header.css"
 const Header = ()=>{
+    console.log("Header call..")
     return (
         <div className="Header">
             <h3>  오늘의 Plan 😃</h3>

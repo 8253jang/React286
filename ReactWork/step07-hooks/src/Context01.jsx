@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { createContext } from 'react';
-import Child01 from '../components/Child01';
+import Child01 from './components/Child01';
 
 export const GlobalContext = createContext();
 

@@ -6,6 +6,7 @@ const Memo01 = () => {
     const [list ,setList] = useState([1,2,3,4]);
     const [str ,setStr] = useState("합계결과");
     //list 항목 더하기 기능
+
     const getAddResult = ()=>{
         let sum=0;
         list.forEach((i)=>{
@@ -15,6 +16,7 @@ const Memo01 = () => {
 
         return sum;
     }//getAddResult함수끝
+    
  
      //기 함수를 useMemo를 사용한다. - 메모이제이션 -값이 변경되지 않으면 계산된 값을 캐시하여 성능을 최적화합니다.
      const addResult = useMemo(()=> {return getAddResult()}  ,[list] );

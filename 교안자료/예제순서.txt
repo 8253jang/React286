@@ -89,7 +89,32 @@ step08-todo
 ===================================
 
 step09-todo-crud
+ 추가, 수정, 삭제, 검색
 
+============================
+ useReducer() - useState대신
+  useMemo() - 연산 최적화
+  React.memo() - Header 랜더링 막음
+  useCallback() - oncreate, ondelete, onupdate 재 생성 막음
+  useContext()
+
+
+step10-todo-reducer
+  : useReducer를 이용 - useState대신
+
+===========================
+step11-todo-memo
+  : useMemo()를 이용한 최적화 - 연산 기억하기
+   totalCount, isDoneCount, isNotDoneCount
+
+==================================
+step12-todo-react-memo
+  : React.memo()를 이용한 최적화
+     Header 컴포넌트 리 랜더링 막음
+  
+==============================
+step13-todo-callback
+  : useCallback를 이용한 함수 ,배열 최적화
 
 
 

@@ -20,7 +20,7 @@ function App() {
       {/* <Effect02 /> */}
       
       {/* 3. useMemo */}
-      {/* <Memo01 /> */}
+      <Memo01 />
 
       {/* 4. useRef */}
       {/* <Ref01/> */}
@@ -29,7 +29,7 @@ function App() {
       {/* <Ref04 /> */}
 
       {/* 5.Context */}
-      <Context01/>
+      {/* <Context01/> */}
     </>
   )
 }
