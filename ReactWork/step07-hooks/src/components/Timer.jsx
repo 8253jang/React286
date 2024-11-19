@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 const Timer = () => {
     //랜더링이 될때 해야할 일 useEffect함수작업
     useEffect(()=>{
-        console.log("Timer useEffect 실행..");
+        console.log("Timerrs useEffect 실행..");
 
         const timer = setInterval(()=>{
             console.log("타이머 실행중...");

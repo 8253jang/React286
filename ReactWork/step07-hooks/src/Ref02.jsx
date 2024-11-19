@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useState } from 'react';
+import  {  useRef, useState } from 'react';
 
 const Ref02 = () => {
     const [count , setCount] = useState(0);
@@ -17,7 +17,7 @@ const Ref02 = () => {
 
     return (
         <div>
-            <h3>Ref와 State 비교하기</h3>
+            <h3>Ref<h3>와 State 비교하기</h3>
            <p>
             State : {count} <button onClick={stateUp}>state Up</button>
             </p> 

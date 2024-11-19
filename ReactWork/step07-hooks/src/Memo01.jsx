@@ -27,7 +27,7 @@ const Memo01 = () => {
           <h3> useMemo 사용하기 </h3>  
           {
             list.map((item, index)=><h6 key={index}>{item}</h6>)
-          }
+          }<h3
           {/* <h3>{str} : {getAddResult()} </h3> */}
           <h3>{str} : {addResult} </h3>
           <button onClick={()=>{ setList([...list , 10]) }}>리스트추가</button>

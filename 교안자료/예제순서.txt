@@ -116,8 +116,16 @@ step12-todo-react-memo
 step13-todo-callback
   : useCallback를 이용한 함수 ,배열 최적화
 
+==============================
+step14-todo-context
 
+===================
+step15-todo-contextSeperator
 
+========================
+step16-router
+
+=====================
 
 
 
