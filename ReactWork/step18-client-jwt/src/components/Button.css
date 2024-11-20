@@ -8,7 +8,6 @@
     white-space: nowrap;/*이버튼안에 있는 text가 화면이 줄어들어도 줄바꿈되지않도록 한다.*/
 }
 
-
 .Button_button{
     background-color: rgb(100, 201, 100);    
     color: white;
@@ -18,8 +17,3 @@
       background-color: rgb(86, 131, 253);    
       color: white;
   }
-
-  /* .Button_submit{
-    background-color: rgb(253, 86, 95);    
-    color: white;
-} */

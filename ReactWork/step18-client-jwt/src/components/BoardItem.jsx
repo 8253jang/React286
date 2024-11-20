@@ -5,7 +5,7 @@ const BoardItem =({title , writer})=>{
     <div className="BoardItem">
       <div className="title_writer">제목 : {title} /작성자 : ({writer})</div>
       <div className="detailLink">
-      <Link to={"/board/1"} >상세보기 </Link>
+        <Link to={"/board/1"} >상세보기 </Link>
       </div>
     </div>
   )
