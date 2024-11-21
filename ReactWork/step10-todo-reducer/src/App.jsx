@@ -25,6 +25,7 @@ const reducer =(state, action)=>{
 
 function App() {
   //const [todos , setTodos] = useState(mockData);
+  
   const [ todos , dispatch]=useReducer(reducer, mockData)
 
   //id의 값은 화면을 갱신 하려는 용도가 아니고 내부적으로 값을 유지하기 용도이므로  ref사용한다.
