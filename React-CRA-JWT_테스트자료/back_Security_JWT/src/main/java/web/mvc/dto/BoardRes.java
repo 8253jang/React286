@@ -21,7 +21,7 @@ public class BoardRes {
          id = board.getId();
          title=board.getTitle();
          content=board.getContent();
-         regDate=board.getRegDate().toString();
+         regDate=board.getRegDate().toLocalDate().toString();
          member=new MemberRes(board.getMember().getMemberNo(),
                  board.getMember().getId() , board.getMember().getName());
 

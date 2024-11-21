@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import "./BoardItem.css";
-const BoardItem =({title , writer})=>{
+const BoardItem =({board})=>{
+  console.log(board);
   return (
     <div className="BoardItem">
-      <div className="title_writer">제목 : {title} /작성자 : ({writer})</div>
+      <div className="title_writer">
+        제목 :{board.title}  / 작성자 : ({board.member.name})
+        </div>
       <div className="detailLink">
-        <Link to={"/board/1"} >상세보기 </Link>
+        <Link to={"/board/"+board.id} >상세보기 </Link>
       </div>
     </div>
   )
