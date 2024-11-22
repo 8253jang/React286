@@ -22,6 +22,14 @@ React프로젝트 - client-jwt-cra
      : 브라우져  개발자도구에서 localStorage 에 저장된 정보를 확인해 본다.
 
   게시판에 새글 등록, 수정, 삭제 진행해본다.
+===========================================
+ 직접 GUI를 구현 해보고 싶다면
+  제공한 step18-client-jwt-temp 프로젝트를 vscode로 오픈한다.  -vite 기반 프로젝트
+   
+   1) npm i
+   2) npm run dev  실행한다.
+
+제공한 11.React_UserBoardJWT_Spring_화면구성.pdf 파일을 참고해서 UI를 완성한다!
   
 
                          

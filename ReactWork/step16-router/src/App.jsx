@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   const navigate = useNavigate();
+  
     const btnClick1 = ()=>{
        //기능
        

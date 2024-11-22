@@ -53,8 +53,6 @@ const UpdateForm =()=>{
   }
 
  const submitBoard = (e)=>{
-    e.preventDefault();
-
     axios({
         method:"PUT",
         url : "http://localhost:9000/boards/"+id,
@@ -65,6 +63,7 @@ const UpdateForm =()=>{
         })
         .then((res)=>{
            navigator("/board/"+id);
+
         })
         .catch((err)=>{
            errFun(err);
@@ -75,18 +74,23 @@ const UpdateForm =()=>{
        <h1 className="h1">  수정하기 </h1>
       <form>
        
-        <LabelText text={"title"} name={"title"} initValue={board.title}/>
+        <LabelText text={"title"} name={"title"} initValue={board.title} 
+        changeValue={changeValue} />
        
-        <LabelText text={"writer"} name={"writer"} initValue={board.member.name}/>
+        <LabelText text={"writer"} name={"name"}  readOnly="yes"/>
       
         <div className="divContent">
           <div className="divContent_label">cotent</div> 
-          <textarea className="divContent_textarea" placeholder="오늘은 어땠나요?"
-           name="content"value={board.content}></textarea>
+          <textarea 
+          className="divContent_textarea" 
+          placeholder="오늘은 어땠나요?"
+           name="content" 
+           value={board.content} 
+           onChange={changeValue}></textarea>
        </div>
 
         <div className="divBtn">
-            <Button text={"수정"}  type={"button"} />
+            <Button text={"수정"}  type={"button"}  onClick={submitBoard}/>
             <Button text={"취소"}  type={"reset"} />
         </div>
         </form>

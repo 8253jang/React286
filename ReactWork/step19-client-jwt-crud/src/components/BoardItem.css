@@ -8,7 +8,7 @@
    font-size: 25px;
 }
 
-.BoardItem  .detailLink{
+/* .BoardItem  .detailLink{
     margin-top: 10px;
     padding: 10px;
     font-size: 20px;
@@ -20,5 +20,10 @@
 
 .BoardItem  .detailLink > a{
     color: blue;
+} */
+
+.BoardItem  .detailLink button{
+    cursor: pointer;
+    margin-top: 10px;
 }
 

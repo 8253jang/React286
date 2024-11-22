@@ -27,23 +27,19 @@ const Header =()=>{
 
             {!logingedCon.isLoggedIn && <Link to="/joinForm">회원가입</Link>}
             
-            {/* 
-            ogingedCon.isLoggedIn ? (
-            <>
-              <span>{localStorage.getItem("name")}</span>
-              <Button text={"로그아웃"} type={"button"} onClick={logoutCheck} />
-            </>
-          ) : (
+            
+            {logingedCon.isLoggedIn ? (
+               <div className="logout">
+                <span>{localStorage.getItem("name")}님</span>
+                <Button text={"로그아웃"} type={"button"} onClick={logoutCheck} />
+              </div>
+            ) 
+          : 
             <Link to="/loginForm">로그인</Link>
-  )
-            */}
-            {logingedCon.isLoggedIn ? 
-              `${}님` 
-              <Button text={"로그아웃"}  type={"button"} onClick={logoutCheck}/>
-              // <Link onClick={logoutCheck}>로그아웃</Link>
-               :
-              <Link to="/loginForm">로그인</Link>
-            }
+           
+          }
+
+            
         </div>    
       </>
     )

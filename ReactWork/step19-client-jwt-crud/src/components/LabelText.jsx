@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import "./LabelText.css"
 
 const LabelText =({text, name, initValue , changeValue , readOnly})=>{
-    console.log("initValue = " + initValue)
+    //console.log("initValue = " + initValue)
     const [value, setValue] = useState(initValue || "");
-    console.log("value = " + value)
+    //console.log("value = " + value)
 
-    useEffect(()=>{
+   
+     useEffect(()=>{
       readOnly && setValue(localStorage.getItem("name"));
-    });
+     });
 
    const onChangeCheck = (e)=>{
      setValue(e.target.value)
@@ -22,7 +23,7 @@ const LabelText =({text, name, initValue , changeValue , readOnly})=>{
             <div>{initValue}</div> :
             <input 
             className={`${initValue ?  'input_disabled':'input'  }`} 
-            type={`${name==="password" ? "password" : "text"}`} 
+            type={`${(name==="password" || name==="pwd") ? "password" : "text"}`} 
              name={name}  
             value={value}
             readOnly={readOnly ? true : undefined} 

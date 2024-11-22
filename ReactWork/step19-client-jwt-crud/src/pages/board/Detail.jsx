@@ -77,14 +77,14 @@ const Detail =()=>{
     navigator("/updateForm/"+id);
 
   };
-    const aa =board.member.name;
+
     return (
       <div className="Detail">
        <h1>상세보기</h1>
       
         <LabelText text={"글번호"}  initValue={board.id}/>
-        <LabelText text={"제목"}  initValue={board.member.name}/>
-        <LabelText text={"작성자"}  initValue={aa}/>
+        <LabelText text={"제목"}  initValue={board.title}/>
+        <LabelText text={"작성자"}  initValue={board.member.name}/>
         <LabelText text={"등록일"}  initValue={board.regDate}/>
   
         <div className="divContent">
