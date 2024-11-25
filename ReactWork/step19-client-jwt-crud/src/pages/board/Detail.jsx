@@ -5,7 +5,9 @@ import "./Detail.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 const Detail =()=>{
+
    //파라미터를 받는다.
    const { id } = useParams(); //
 
@@ -93,14 +95,13 @@ const Detail =()=>{
            name="content"  disabled value={board.content}></textarea>
        </div>
       
-      {board.member.name === localStorage.getItem("name") &&
+      { board.member.name === localStorage.getItem("name") &&
        <div className="divBtn">
-            <Button text={"수정"}  type={"button"}  
-            onClick={()=>{nav("/updateForm/"+id)}}/>
-            <Button text={"삭제"}  type={"button"} onClick={deleteBoard}
-             />
+            <Button text={"수정"}  type={"button"}  onClick={()=>{nav("/updateForm/"+id)}}/>
+            <Button text={"삭제"}  type={"button"} onClick={deleteBoard} />
         </div>
-      }
+      }  
+      
       </div>
     )
   }

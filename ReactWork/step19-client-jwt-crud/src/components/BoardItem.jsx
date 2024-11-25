@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./BoardItem.css";
 import Button from "./Button";
-const BoardItem =({board})=>{
-  console.log(board);
+const BoardItem =( {board} )=>{
+  //console.log(board);
 
   const nav= useNavigate();
   const check = ()=>{
@@ -19,7 +19,6 @@ const BoardItem =({board})=>{
         제목 :{board.title}  / 작성자 : ({board.member.name})
         </div>
       <div  className="detailLink">
-        {/* <Link to={"/board/"+board.id} >상세보기 </Link> */}
         <Button  text={"상세보기"} type={"button"} onClick={check} detail={"detail"}/>
       </div>
     </div>

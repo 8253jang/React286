@@ -25,8 +25,6 @@ const SaveForm =()=>{
 
   //등록하기 클릭
   const submitBoard = (e) => {
-    //e.preventDefault();
-
     axios({
       method: "POST",
       url: "http://localhost:9000/boards/board",
@@ -40,14 +38,13 @@ const SaveForm =()=>{
         navigator("/");
       })
       .catch((err) => {
-        let errMessage = err.response.data.type + "\n";
-        errMessage += err.response.data.title + "\n";
-        errMessage += err.response.data.detail + "\n";
-        errMessage += err.response.data.status + "\n";
-        errMessage += err.response.data.instance + "\n";
-        errMessage += err.response.data.timestamp;
-        alert(errMessage);
-      });
+        if (err.response.status === 403) {
+          alert("로그인된 사용자만이 글을 등록 할 수 있어요.");
+          navigator("/");
+        } else {
+         alert(err.response.data.detail);
+        }
+     });
   };
 
     return (
@@ -59,13 +56,12 @@ const SaveForm =()=>{
      
         <div className="divContent">
           <div className="divContent_label">cotent</div> 
-          <textarea className="divContent_textarea" placeholder="오늘은 어땠나요?" 
-          name="content" onChange={changeValue}></textarea>
+          <textarea className="divContent_textarea" placeholder="내용을 입력해주세요^^"  name="content" onChange={changeValue}></textarea>
        </div>
 
         <div className="divBtn">
             <Button text={"등록"}  type={"button"}  onClick={submitBoard}/>
-            <Button text={"취소"}  type={"reset"} />
+            <Button text={"취소"}  type={"reset"}  onClick={()=>navigator(-1)}/>
         </div>
       </>
     )

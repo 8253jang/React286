@@ -13,31 +13,32 @@ import Footer from './components/Footer'
 import { createContext, useEffect, useState } from "react";
 
 /*useContext 를 이용해서 하위 컴포넌트들이 데이터 공유하기*/
-export const LogingedContext = createContext();
+export const LoginContext = createContext();
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  //로그인 여부를 판단하는 상태변수 (true이면 로그인, false 로그아웃)
+  const [isLogin, setIsLogin] = useState(false);
 
   //컴포넌트가 mount or update 될때 로그인 여부에 따른 상태값 변경
   useEffect(() => {
-    localStorage.getItem("id") != null ? setIsLoggedIn(true) : setIsLoggedIn(false);
+    localStorage.getItem("id") != null ? setIsLogin(true) : setIsLogin(false);
 
-    console.log("App useEffect isLoggeedIn = ", isLoggedIn);
-  });
+    console.log("App useEffect isLogin = ", isLogin);
+  },[isLogin]);
 
   /*
 로그인(LoginForm.jsx) or 로그아웃(Header.jsx) 될 때 로그인여부 상태값을 변경할 이벤트
-handleLoggedChange 와 isLoggedIn 를 사용해야 하는 컴포넌트들이 여럿이기에createContex 를 이용하여 서로 공유할수 있도록 한다.
+handleLoginChange 와 isLogin 를 사용해야 하는 컴포넌트들이 여럿이기에createContext 를 이용하여 서로 공유할수 있도록 한다.
 */
-  const handleLoggedChange = (isLoggedIn) => {
-    setIsLoggedIn(isLoggedIn);
+  const handleLoginChange = (isLogin) => {
+    setIsLogin(isLogin);
   };
 
   return (
-    <LogingedContext.Provider 
-    value={ {isLoggedIn:isLoggedIn , 
-             onLoggedChange:handleLoggedChange } }>
+    
     <div className="App">
+      <LoginContext.Provider 
+    value={ {isLogin:isLogin , handleLoginChange:handleLoginChange } }>
        <Header/>
        <main className="AppManin">
         <Routes>
@@ -51,9 +52,9 @@ handleLoggedChange 와 isLoggedIn 를 사용해야 하는 컴포넌트들이 여
         </Routes>
      </main>
         <Footer />
-         
+      </LoginContext.Provider>   
     </div>
-    </LogingedContext.Provider>
+   
   )
 }
 
